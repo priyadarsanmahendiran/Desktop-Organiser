@@ -1,12 +1,9 @@
 name: Upload Python Package to PyPI
 
 on:
-  release:
-    types: [published]
-  # Or uncomment this to publish whenever you push a Git tag starting with "v" (like v0.1.0)
-  # push:
-  #   tags:
-  #     - 'v*'
+  push:
+    branches:
+      - main
 
 jobs:
   pypi-publish:
