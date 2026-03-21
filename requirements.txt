@@ -1,0 +1,6 @@
+# Local LLM Integration (Ollama)
+langchain-community
+langchain-core
+
+# Operating System Sensory Hooks
+watchdog
