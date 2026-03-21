@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desktop-organiser-ai"
+version = "0.1.0"
+authors = [
+  { name="Priyadarsan Mahi" }
+]
+description = "An AI-powered, intelligent desktop and downloads folder organiser for macOS."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: MacOS",
+]
+dependencies = [
+    "langchain-community",
+    "langchain-core",
+    "watchdog"
+]
+
+[project.scripts]
+desktop-organiser = "organise:start_agent"
+
+[tool.setuptools]
+py-modules = ["organise"]
